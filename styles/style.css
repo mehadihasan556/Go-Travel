@@ -142,7 +142,20 @@ body {
             font-size: 12px;
             border-radius: 8px; }
       
+    #choose{text-align: center;}
+    #sit{text-align: center;}
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+    }
     
+    .grid-item img {
+        max-width: 100%;
+        height: auto;
+    }
     
     
     /* Media query for max-width 600px */
@@ -158,10 +171,9 @@ body {
         }
     }
 
-  
+   
 
-/* Media query for responsiveness */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) { 
     .popular {
         flex-direction: column;
     }
@@ -169,4 +181,7 @@ body {
     .img {
         margin-top: 20px;
     }
+}
+.grid-container {
+    grid-template-columns: repeat(3, 1fr);
 }
