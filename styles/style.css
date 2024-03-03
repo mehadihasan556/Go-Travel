@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
 }
-
+*{margin:0;
+padding:0;}
 
 body {
     font-family: "Mulish", sans-serif;
 }
 
 .navbar {
-    /* border: 2px solid red; */
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,9 +109,6 @@ body {
     align-items: center;
 }
 
-/* .tours{display: flex;
-        flex-direction: column;
-        justify-content:center; */
 
 
 .popular {
@@ -255,25 +253,49 @@ body {
     text-align: center;
 }
 
-
-.footer-title{display:flex;
-justify-content: center;
-align-items: center;}
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
-  background-color:aliceblue ;
+    background-color: aliceblue;
     justify-content: center;
     align-items: center;
-   
-
-
-
+    padding: 20px;
 }
-.icons{display: flex;}
 
+.footer-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.icons i {
+    margin: 0 10px; 
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        padding: 10px; 
+    }
+
+    .footer-title img {
+        width: 20px; 
+        height: 15px; 
+    }
+
+    .footer-title h5 {
+        font-size: 14px; 
+    }
+
+    .icons i {
+        margin: 0 5px; 
+    }
+}
 
 @media screen and (min-width: 600px) {
     .newsletter {
@@ -302,27 +324,11 @@ align-items: center;}
     }
 }
 
-
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
     .card {
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 600px) {
     .form {
@@ -335,8 +341,6 @@ align-items: center;}
         margin-right: 0;
     }
 }
-
-
 
 @media only screen and (max-width: 600px) {
     .popular {
